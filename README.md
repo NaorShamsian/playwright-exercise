@@ -1,8 +1,11 @@
+הנה גרסה מעודכנת ומקצועית יותר שמתאימה למה שבנית עכשיו עם Page Object Model:
+
+````markdown
 # Playwright Automation Exercise
 
-This repository contains a simple end-to-end automation exercise built with Playwright and JavaScript.
+This repository contains an end-to-end automation project built with Playwright and JavaScript.
 
-The project was created as part of a QA Automation assignment.
+The project was created as part of a QA Automation assignment and demonstrates UI test automation using the Page Object Model (POM) design pattern.
 
 ---
 
@@ -14,25 +17,47 @@ The project was created as part of a QA Automation assignment.
 
 ---
 
-## Automated Flow
+## Features
 
 The automation performs the following actions:
 
 - Opens the target website
-- Fills the contact form fields
+- Fills all contact form fields
 - Changes the "Number of Employees" dropdown value
 - Takes a screenshot before form submission
 - Submits the form
-- Prints a console message after reaching the thank-you page
+- Validates successful navigation to the thank-you page
+- Prints a success message in the console
+
+---
+
+## Design Pattern
+
+This project follows the **Page Object Model (POM)** design pattern.
+
+The locators and page actions are separated from the test logic in order to improve:
+
+- Readability
+- Reusability
+- Maintainability
+- Scalability
 
 ---
 
 ## Project Structure
 
 ```bash
-tests/               # Playwright test files
-test-results/        # Screenshots and execution results
-playwright.config.js # Playwright configuration
+pages/
+└── ContactPage.js       # Page Object containing locators and page methods
+
+tests/
+└── contactForm.spec.js  # Main Playwright test
+
+screenshots/             # Saved screenshots before form submission
+
+playwright.config.js     # Playwright configuration
+
+package.json             # Project dependencies
 ```
 
 ---
@@ -47,6 +72,8 @@ npx playwright install
 ---
 
 ## Run Tests
+
+Run all tests:
 
 ```bash
 npx playwright test
@@ -64,3 +91,4 @@ npx playwright test --headed
 
 Naor Shamsian  
 Computer Science Student | QA Automation Enthusiast
+````
