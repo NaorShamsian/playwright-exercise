@@ -1,6 +1,3 @@
-הנה גרסה מעודכנת ומקצועית יותר שמתאימה למה שבנית עכשיו עם Page Object Model:
-
-````markdown
 # Playwright Automation Exercise
 
 This repository contains an end-to-end automation project built with Playwright and JavaScript.
@@ -91,4 +88,3 @@ npx playwright test --headed
 
 Naor Shamsian  
 Computer Science Student | QA Automation Enthusiast
-````
